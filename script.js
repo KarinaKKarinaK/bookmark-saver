@@ -64,7 +64,7 @@ function loadBookmarks() {
     });
 }
 
-function removeBookmarkFromStorage(name, url) {
+function removeBookmarkFromStorage(name, url) {s
     let bookmarks = getBookmarksFromStorage();
     bookmarks = bookmarks.filter(bookmark => bookmark.name !== name || bookmark.url !== url);
     localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
